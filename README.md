@@ -2,7 +2,7 @@
 # tmodloader calamity lag fix
 
 A big problem that my friends and I have ran into is calamity bosses are very laggy in multipler, teleporting around and desyncing heavily.
-I came across [this fix](acknowledgements)
+I came across [this fix](##acknowledgements)
 
 However, the config file was being overwritten every time the world saved or the game was exited even when set to read-only and turning off steam cloud. The purpose of this script is to automatically set the MultiplayerNPCSmoothingRange to 0 on tmodloader startup and then set the file to read-only.
 ## Installation
