@@ -18,3 +18,6 @@ Currently, terraria remakes the config file overwritting the new file when the w
 ## Acknowledgements
 
  - [Steam Guide to original fix](https://steamcommunity.com/sharedfiles/filedetails/?id=2923672646)
+
+## Warning
+This overwrites your config files, make a backup in both your terraria folder and tmodloader folder. If something breaks and you didn't back-up your configs, delete the config.json from both folders, delete the downloaded update-config.bat, edit the start-tmodloader bat file and remove the line "call update-config" and it will generate a new config when you start up your game. You can then re-install the bat files and put them back in the folder
