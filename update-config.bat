@@ -1,6 +1,11 @@
 @echo off
 
 set "myGamesPath=%USERPROFILE%\Documents\My Games\Terraria"
+
+REM if terraria folder isn't found, check for Onedrive folder
+IF NOT EXIST "%myGamesPath%" (
+    set "myGamesPath=%USERPROFILE%\OneDrive\Documents\My Games\Terraria"
+)
 ECHO My Games Path: %myGamesPath%
 
 set "file1=%myGamesPath%\config.json"
