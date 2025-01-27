@@ -6,6 +6,12 @@ REM if terraria folder isn't found, check for Onedrive folder
 IF NOT EXIST "%myGamesPath%" (
     set "myGamesPath=%USERPROFILE%\OneDrive\Documents\My Games\Terraria"
 )
+REM if folder still isn't found, exit
+IF NOT EXIST "%myGamesPath%" (
+    ECHO Terraria folder not found at "%USERPROFILE%\Documents\My Games\Terraria" or "%USERPROFILE%\OneDrive\Documents\My Games\Terraria"
+    pause
+    exit
+)
 ECHO My Games Path: %myGamesPath%
 
 set "file1=%myGamesPath%\config.json"
@@ -86,3 +92,5 @@ if exist "%file2%" (
     echo File not found: %file2%
     pause
 )
+
+endlocal
